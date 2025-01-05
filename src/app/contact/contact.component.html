@@ -1,0 +1,20 @@
+<div class="mb-4 hight">
+    <div class="pt-3 container">
+        <app-star></app-star>
+        <form class="w-50 p-3 mx-auto mt-5 ng-untouched ng-pristine ng-valid">
+            <label for="userName" class="position-relative" [class]="labelClasses['userName']">userName : </label>
+            <input [(ngModel)]="userName" (input)="updateLabel('userName',userName)" type="text" id="userName" placeholder="userName" name="userName"
+                class="form-control border-0 border-bottom py-3 position-relative ng-untouched ng-pristine ng-valid">
+            <label for="userAge" class="position-relative" [class]="labelClasses['userAge']">userAge : </label>
+            <input [(ngModel)]="userAge" (input)="updateLabel('userAge',userAge)" type="text" id="userAge" placeholder="userAge" name="userAge"
+                class="form-control border-0 border-bottom py-3 position-relative ng-untouched ng-pristine ng-valid">
+            <label for="userEmail" class="position-relative" [class]="labelClasses['userEmail']">userEmail : </label>
+            <input [(ngModel)]="userEmail" (input)="updateLabel('userEmail',userEmail)" type="text" id="userEmail" placeholder="userEmail" name="userEmail"
+                class="form-control border-0 border-bottom py-3 position-relative ng-untouched ng-pristine ng-valid">
+            <label for="userPassword" class="position-relative" [class]="labelClasses['userPassword']">userPassword : </label>
+            <input [(ngModel)]="userPassword" (input)="updateLabel('userPassword',userPassword)" type="password" id="userPassword" placeholder="userPassword" name="userPassword"
+                class="form-control border-0 border-bottom py-3 position-relative ng-untouched ng-pristine ng-valid">
+        <button class="btn mt-4 text-white" style="background-color: #1abc9c;"> send Message </button>
+            </form>
+    </div>
+</div>
